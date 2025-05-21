@@ -2,9 +2,7 @@ vim.loader.enable()
 
 -- Custom Plugin Manager
 
-vim.schedule(function()
-	require("plg.bootstrap")
-end)
+require("config.plg")
 
 -- Editor Settings
 
