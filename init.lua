@@ -1,8 +1,18 @@
--- Plugin Manager
+vim.loader.enable()
 
-require("plg.bootstrap")
+-- Custom Plugin Manager
+
+vim.schedule(function()
+	require("plg.bootstrap")
+end)
 
 -- Editor Settings
+
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.softtabstop = 4
+
+vim.opt.wrap = false
 
 vim.opt.number = true
 vim.opt.relativenumber = true
@@ -12,5 +22,5 @@ vim.opt.cursorcolumn = false
 
 vim.opt.clipboard = "unnamedplus"
 
--- Persistent Colorscheme (Custom Script)
+-- Custom Persistent Colorscheme
 require("keepcolor")
